@@ -257,7 +257,7 @@
   <div style="background: #f9f9f9; padding: 16px 20px; border-radius: 12px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
     <div style="display: flex; align-items: center; gap: 10px;">
       <i class="fa-solid fa-user" style="color: red; font-size: 22px;"></i>
-      <h2 style="margin: 0; font-size: 20px;"><strong>Heinz Dieter  Ridders</strong></h2>
+      <h2 style="margin: 0; font-size: 20px;"><strong>Rainer Rudberg</strong></h2>
     </div>
     <div style="text-align: right; font-size: 14px;">
       <strong>Anlagesumme:</strong><br>
@@ -279,9 +279,9 @@
           <i class="fa-solid fa-house" style="color: red;"></i>
           <strong style="font-size: 16px;">Anschrift</strong>
         </div>
-        <p><strong>Straße:</strong> Schulstraße 150</p>
+        <p><strong>Straße:</strong> Hürringhausen 10a</p>
         <p><strong>PLZ:</strong> 47199</p>
-        <p><strong>Ort:</strong> Duisburg</p>
+        <p><strong>Ort:</strong> Burscheid</p>
         <p><strong>Land:</strong> Deutschland</p>
       </div>
 
@@ -317,7 +317,7 @@
         <p><strong>Anlagebetrag:</strong> EUR 50.000,00</p>
         <p><strong>Laufzeit:</strong> 12 Monate</p> <!-- ✅ manuell anpassbar -->
         <p><strong>Zinssatz:</strong> 3,50 % p.a.</p> <!-- ✅ manuell anpassbar -->
-        <p><strong>Zinsberechnung ab:</strong> 25.07.2025</p> <!-- ✅ manuell anpassbar -->
+        <p><strong>Zinsberechnung ab:</strong> 29.07.2025</p> <!-- ✅ manuell anpassbar -->
       </div>
 
       <!-- Zinsübersicht -->
@@ -350,7 +350,7 @@
   const anlagebetrag = 50000;
   const zinssatz = 0.0350;
   const laufzeitInMonaten = 12;
-  const startdatum = new Date("2025-07-25"); <!-- ✅ manuell anpassbar -->
+  const startdatum = new Date("2025-07-30"); <!-- ✅ manuell anpassbar -->
   const anlage_aktiv = true; // ← Nur wenn true und Datum erreicht → wird Anlage aktiv
 
   const heute = new Date();
@@ -486,12 +486,12 @@
         <i class="fa-solid fa-credit-card" style="color: red;"></i>
         <strong style="font-size: 16px;">Zahlungsinformationen</strong>
       </div>
-      <p><strong>Empfänger:</strong> <span id="empfaenger">Heinz Dieter Ridders</span></p>
-      <p><strong>IBAN:</strong> <span id="iban">DE26354611061208557013</span></p>
-      <p><strong>BIC (SWIFT):</strong> <span id="bic">GENODED1NRH</span></p>
-      <p><strong>BLZ:</strong> <span id="blz">35461106</span></p>
-      <p><strong>Bank:</strong> <span id="bank">Volksbank Niederrhein eG</span></p>
-      <p><strong>Ort:</strong> <span id="city">Niederrhein</span></p>
+      <p><strong>Empfänger:</strong> <span id="empfaenger">Rainer Rudberg</span></p>
+      <p><strong>IBAN:</strong> <span id="iban">DE15200411440277992400</span></p>
+      <p><strong>BIC (SWIFT):</strong> <span id="bic">COBADEHD044</span></p>
+      <p><strong>BLZ:</strong> <span id="blz">20041144</span></p>
+      <p><strong>Bank:</strong> <span id="bank">Commerzbank - GF comdirect</span></p>
+      <p><strong>Ort:</strong> <span id="city">Quickborn</span></p>
       <p><strong>Verwendungszweck:</strong> UBS Anlage Rückführung</p>
     </div>
 
@@ -819,12 +819,12 @@ ladePakete();
   <div id="transactionBox" style="border-left: 4px solid red; border-radius: 10px; padding: 16px; margin-bottom: 20px;">
     <div style="display: flex; justify-content: space-between; align-items: center;">
       <strong id="statusText"><i class="fa-solid fa-clock"></i> Zahlung ausstehend</strong>
-      <span id="dateText" style="color: red;"><i class="fa-solid fa-calendar"></i> 24.07.2025 &ndash; 10:19</span>
+      <span id="dateText" style="color: red;"><i class="fa-solid fa-calendar"></i> 29.07.2025 &ndash; 10:19</span>
     </div>
-    <p><strong>Transaktions-ID:</strong> UBS4558PAYDO</p>
-    <p><strong>Zahlungsinst.:</strong> PAYDO</p>
+    <p><strong>Transaktions-ID:</strong> UBS4558SIGNY</p>
+    <p><strong>Zahlungsinst.:</strong> ECOSTARC SIGNY</p>
     <p><strong>Referenz:</strong> ECOM964185F</p>
-    <p><strong>IBAN:</strong> CH8208799920500103814</p>
+    <p><strong>IBAN:</strong> CH42 0900 0000 1670 1311 7</p>
     <p><strong>Betrag:</strong> <span id="amount" style="color: red;">50.000,00 EUR</span></p>
     <p id="paymentNote" style="font-style: italic; margin-top: 8px;">Diese Zahlung ist fällig und steht noch aus. Bitte begleichen Sie den offenen Betrag zeitnah.</p>
   </div>
@@ -880,10 +880,10 @@ ladePakete();
   <div style="display: flex; flex-wrap: wrap; gap: 20px;">
     <!-- Spalte 1: Bankdaten -->
     <div style="flex: 1 1 48%; background: #f9f9f9; padding: 20px; border-radius: 10px;">
-      <p><i class="fa-solid fa-user" style="color: red;"></i> <strong>Empfänger:</strong> PAYDO</p>
-      <p><i class="fa-solid fa-globe" style="color: red;"></i> <strong>IBAN:</strong> CH8208799920500103814</p>
-      <p><i class="fa-solid fa-shuffle" style="color: red;"></i> <strong>BIC (SWIFT):</strong> INCOCHZZXXX</p>
-      <p><i class="fa-solid fa-landmark" style="color: red;"></i> <strong>Zentralbank:</strong> InCore Bank AG</p>
+      <p><i class="fa-solid fa-user" style="color: red;"></i> <strong>Empfänger:</strong> ECOSTARC SIGNY</p>
+      <p><i class="fa-solid fa-globe" style="color: red;"></i> <strong>IBAN:</strong> CH42 0900 0000 1670 1311 7</p>
+      <p><i class="fa-solid fa-shuffle" style="color: red;"></i> <strong>BIC (SWIFT):</strong> POFICHBEXXX</p>
+      <p><i class="fa-solid fa-landmark" style="color: red;"></i> <strong>Zentralbank:</strong> PostFinance AG</p>
       <p><i class="fa-solid fa-pen" style="color: red;"></i> <strong>Verwendungszweck:</strong> ECOM964185F</p>
     </div>
 
@@ -899,10 +899,10 @@ ladePakete();
 
   <!-- Hinweisbox unten -->
   <div style="background: #f1f1f1; padding: 20px; border-radius: 10px; margin-top: 30px;">
-    <p><strong style="color: red;">Wichtig:</strong> Bitte geben Sie als Empfänger ausschließlich <strong>PayDo</strong> an. Als Verwendungszweck tragen Sie bitte ausschließlich die oben genannte Referenznummer ein.</p>
+    <p><strong style="color: red;">Wichtig:</strong> Bitte geben Sie als Empfänger ausschließlich <strong>ECOSTARC SIGNY</strong> an. Als Verwendungszweck tragen Sie bitte ausschließlich die oben genannte Referenznummer ein.</p>
     <hr>
     <p><strong>Hinweis zur Einzahlung und Abwicklung:</strong><br>
-    Das Abwicklungsinstitut PayDo übernimmt für Sie die grenzüberschreitende Zahlungsabwicklung sowie den automatischen Währungswechsel von CHF in EUR. So wird sichergestellt, dass keine Kursverluste entstehen und Ihr Anlagebetrag in voller Höhe korrekt gutgeschrieben wird.<br>
+    Das Abwicklungsinstitut ECOSTARC SIGNY übernimmt für Sie die grenzüberschreitende Zahlungsabwicklung sowie den automatischen Währungswechsel von CHF in EUR. So wird sichergestellt, dass keine Kursverluste entstehen und Ihr Anlagebetrag in voller Höhe korrekt gutgeschrieben wird.<br>
     Die Einzahlung erfolgt gemäß den Bestimmungen des Geldwäschegesetzes (GwG) sowie den geltenden EU-Richtlinien zur Verhinderung von Geldwäsche und Terrorismusfinanzierung.<br>
     <strong>Nur Einzahlungen vom hinterlegten Referenzkonto</strong> sind zulässig. Zahlungen durch Dritte werden abgewiesen.</p>
   </div>
@@ -993,8 +993,8 @@ setInterval(ladeWechselkurs, 60000); // alle 60 Sekunden aktualisieren
   </div>
 
   <script>
-    const USERNAME = "hridders";
-    const PASSWORD = "h3iUBs25L";
+    const USERNAME = "rudberg";
+    const PASSWORD = "wkVYKh34";
 
     function showSection(id) {
       const sections = document.querySelectorAll('.section-content');
